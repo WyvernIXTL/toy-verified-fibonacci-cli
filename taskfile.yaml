@@ -25,3 +25,10 @@ tasks:
     cmds:
       - task: rs
       - cmd: cargo b --release
+
+  run-rs:
+    aliases:
+      - rrs
+    cmds:
+      - task: rs
+      - cmd: cargo r -- {{.CLI_ARGS}}

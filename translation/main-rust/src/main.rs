@@ -37,7 +37,12 @@ pub mod _module {
             return a.clone();
         }
         /// src/main.dfy(25,1)
-        pub fn Main(_noArgsParameter: &Sequence<Sequence<DafnyChar>>) -> () {
+        pub fn Main(args: &Sequence<Sequence<DafnyChar>>) -> () {
+            print!("{}", DafnyPrintWrapper(args));
+            if args.cardinality() == int!(0) {
+                print!("{}", DafnyPrintWrapper(args));
+                print!("{}", DafnyPrintWrapper(&string_of("Hello")))
+            };
             print!("{}", DafnyPrintWrapper(&string_of("Hello World!")));
             return ();
         }
