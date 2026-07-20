@@ -24,8 +24,8 @@ method FibLin(n: nat) returns (a: nat)
 
 method Main(args: seq<string>) {
   if |args| != 2 {
-    print "Verified Fibonacci Solver by Adam McKellar";
-    print "USAGE: verified-fibonacci <n>";
+    print "Verified Fibonacci Solver by Adam McKellar\n";
+    print "USAGE: verified-fibonacci <n>\n";
     return;
   }
 

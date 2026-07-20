@@ -38,10 +38,10 @@ pub mod _module {
         }
         /// src/main.dfy(25,1)
         pub fn Main(args: &Sequence<Sequence<DafnyChar>>) -> () {
-            print!("{}", DafnyPrintWrapper(args));
-            if args.cardinality() == int!(0) {
-                print!("{}", DafnyPrintWrapper(args));
-                print!("{}", DafnyPrintWrapper(&string_of("Hello")))
+            if args.cardinality() != int!(2) {
+                print!("{}", DafnyPrintWrapper(&string_of("Verified Fibonacci Solver by Adam McKellar\n")));
+                print!("{}", DafnyPrintWrapper(&string_of("USAGE: verified-fibonacci <n>\n")));
+                return ();
             };
             print!("{}", DafnyPrintWrapper(&string_of("Hello World!")));
             return ();
