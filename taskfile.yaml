@@ -1,0 +1,27 @@
+version: '3'
+
+tasks:
+  verify:
+    aliases:
+      - v
+    cmds:
+      - dafny verify --progress Symbol --analyze-proofs --extract-counterexample src/main.dfy
+
+  compile:
+    aliases:
+      - c
+    cmds:
+      - dafny build src/main.dfy -o target/verified-fibonacci -t py --progress Symbol 
+
+  translate-to-rs:
+    aliases:
+      - rs
+    cmds:
+      - dafny translate rs src/main.dfy --enforce-determinism -o translation/main
+
+  build-rs:
+    aliases:
+      - brs
+    cmds:
+      - task: rs
+      - cmd: cargo b --release
