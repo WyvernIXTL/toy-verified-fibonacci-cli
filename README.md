@@ -15,9 +15,9 @@ The verified and to Rust translated code is also checked out in git under the [`
 
 ### Prerequisites
 
-* [Dafny](https://dafny.org/)
-* [Rust](https://rust-lang.org/)
-* [Task](https://taskfile.dev/)
+* [Dafny](https://dafny.org/) v4.11.0 or compatible.
+* [Rust](https://rust-lang.org/) v1.96.0 or later
+* [Task](https://taskfile.dev/) v3.52.0 or later
 
 
 ### Compilation of Rust Checked out in VCS
@@ -60,3 +60,4 @@ task v
 
 And by the way at the moment of writing this, the translation of the Dafny standard library to Rust fails for me. That's why I wrote `NatFromString`.
 
+This was written with Dafny v4.11.0.
