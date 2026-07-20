@@ -8,7 +8,8 @@
 
 This is a toy project experimenting with dafny and the translation to rust.
 The fibonacci algorithm is verified in Dafny (which of course isn't really a hard thing to do).
-The verified and to rust translated code is also checked out in git under the `translation/main-rust` directory.
+The Dafny Code is in [`src/main.dfy`](./src/main.dfy).
+The verified and to rust translated code is also checked out in git under the [`translation/main-rust`](./translation/main-rust/) directory.
 
 ## Compilation
 
