@@ -46,3 +46,7 @@ task v
 ![Calculation of the 1000-th Fibonacci number with CLI](./img/verified-fibonacci_1000-fs8.png)
 
 
+## Note
+
+And btw. at the moment of writing this, the translation of the Dafny standard library to Rust fails for me. Thats why I wrote `NatFromString`.
+
