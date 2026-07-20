@@ -11,7 +11,16 @@ The Fibonacci algorithm is verified in Dafny (which of course isn't really a har
 The Dafny code is in [`src/main.dfy`](./src/main.dfy).
 The verified and to Rust translated code is also checked out in git under the [`translation/main-rust`](./translation/main-rust/) directory.
 
-## Compilation
+## Compilation & Verification
+
+### Prerequisites
+
+* [Dafny](https://dafny.org/)
+* [Rust](https://rust-lang.org/)
+* [Task](https://taskfile.dev/)
+
+
+### Compilation of Rust Checked out in VCS
 
 To compile the in the VCS checked out Rust code, run:
 
@@ -22,9 +31,9 @@ cargo build --release
 The compiled executable is in `target/release`.
 
 
-## Compilation from Dafny
+### Compilation from Dafny
 
-To verify, translate and compile the Dafny code, install [task](https://taskfile.dev/) and then run:
+To verify, translate and compile the Dafny code, run:
 
 ```
 task brs
@@ -32,18 +41,19 @@ task brs
 
 The compiled executable is in `target/release`.
 
-## Verification of Dafny Code
 
-To just verify the Dafny code, install [task](https://taskfile.dev/) and then run:
+### Verification of Dafny Code
+
+To just verify the Dafny code, run:
 
 ```
 task v
 ```
 
+
 ## Images
 
 ![Calculation of the 30-th Fibonacci number with CLI](./img/verified-fibonacci_30-fs8.png)
-![Calculation of the 1000-th Fibonacci number with CLI](./img/verified-fibonacci_1000-fs8.png)
 
 
 ## Note
