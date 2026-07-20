@@ -6,10 +6,10 @@
 
 </div>
 
-This is a toy project experimenting with Dafny and the translation to rust.
+This is a toy project experimenting with Dafny and the translation to Rust.
 The Fibonacci algorithm is verified in Dafny (which of course isn't really a hard thing to do).
 The Dafny code is in [`src/main.dfy`](./src/main.dfy).
-The verified and to rust translated code is also checked out in git under the [`translation/main-rust`](./translation/main-rust/) directory.
+The verified and to Rust translated code is also checked out in git under the [`translation/main-rust`](./translation/main-rust/) directory.
 
 ## Compilation
 
