@@ -40,5 +40,9 @@ To just verify the Dafny code, install [task](https://taskfile.dev/) and then ru
 task v
 ```
 
+## Images
+
+![Calculation of the 30-th Fibonacci number with CLI](./img/verified-fibonacci_30-fs8.png)
+![Calculation of the 1000-th Fibonacci number with CLI](./img/verified-fibonacci_1000-fs8.png)
 
 
