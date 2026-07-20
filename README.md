@@ -2,12 +2,12 @@
 
 # Verified Toy Fibonacci CLI
 
-**Verified, toy CLI for calculating the n-th fibonacci number.**
+**Verified, toy CLI for calculating the nth Fibonacci number.**
 
 </div>
 
-This is a toy project experimenting with dafny and the translation to rust.
-The fibonacci algorithm is verified in Dafny (which of course isn't really a hard thing to do).
+This is a toy project experimenting with Dafny and the translation to rust.
+The Fibonacci algorithm is verified in Dafny (which of course isn't really a hard thing to do).
 The Dafny code is in [`src/main.dfy`](./src/main.dfy).
 The verified and to rust translated code is also checked out in git under the [`translation/main-rust`](./translation/main-rust/) directory.
 
@@ -48,5 +48,5 @@ task v
 
 ## Note
 
-And btw. at the moment of writing this, the translation of the Dafny standard library to Rust fails for me. Thats why I wrote `NatFromString`.
+And by the way at the moment of writing this, the translation of the Dafny standard library to Rust fails for me. That's why I wrote `NatFromString`.
 
